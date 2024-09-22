@@ -18,37 +18,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav class="lg:flex items-center justify-around bg-slate-100 pt-3 pb-10">
-      <div class="flex items-center justify-center">
-        <button class="btn bg-lime-400 px-8 font-bold text-lg">Blog</button>
-      </div>
-      <div class="lg:flex gap-2 sm:flex items-center justify-center flex pt-5">
-        <img class="" src="assets/logo.png" alt="" />
-        <h1 class="font-bold text-lg mt-3">Donate Bangladesh</h1>
-      </div>
-      <div class="lg:flex gap-2 flex justify-center items-center pt-5">
-        <img src="assets/coin.png" alt="" />
-        <h1 class="font-bold text-lg">5500 BDT</h1>
-      </div>
-    </nav>
-    <div
-      class="lg:flex lg:justify-center lg:items-center pt-10 pb-10 gap-10 flex justify-center items-center"
-    >
-      <button class="btn bg-lime-400 px-8 font-bold text-lg">Donation</button>
-      <button class="btn px-8 font-bold text-lg">History</button>
-    </div>
+    <!-- navbar section -->
+    <header>
+      <nav
+        class="flex items-center justify-around gap-5 p-5 bg-slate-100 pt-3 pb-10 lg:fixed w-full fixed"
+      >
+        <div class="">
+          <button class="btn bg-lime-400 px-8 font-bold text-lg">Blog</button>
+        </div>
+        <div class="flex gap-2 items-center justify-center ">
+          <img class="" src="assets/logo.png" alt="" />
+          <h1 class="font-bold text-lg mt-3">Donate Bangladesh</h1>
+        </div>
+        <div class="flex gap-2  justify-center items-center pt-5">
+          <img src="assets/coin.png" alt="" />
+          <h1 class="font-bold text-lg">5500 BDT</h1>
+        </div>
+        
+      </nav>
+      <br><br><br> <br>
+        
+      <section
+        class="lg:flex lg:justify-center lg:items-center pt-10 pb-10 gap-10 flex justify-center items-center lg:fixed w-full fixed bg-lime-200 "
+      >
+        <button class="btn bg-lime-400 px-8 font-bold text-lg">Donation</button>
+        <button class="btn px-8 font-bold text-lg">History</button>
+      </section>
+      <br><br> <br><br> <br> <br><br>
+      
+    </header>
+    
+    
 
-    <main>
-      <section class="w-11/12 mx-auto">
+    <main class="">
+        
+      
+
+      <!-- card section - -->
+      <section class="w-11/12 mx-auto ">
         <div
-          class="grid lg:grid-cols-2 grid-cols-1 border-solid rounded-lg border-2 border-slate-00 p-5 shadow-lg mb-10"
+          class="grid lg:grid-cols-2 grid-cols-1 border-solid rounded-lg border-2 border-slate-100 p-5 shadow-lg mb-10"
         >
           <div>
             <img src="assets/noakhali.png" alt="" />
           </div>
           <div>
             <div
-              class="flex items-center gap-3 w-[110px] h-[44px] rounded-md p-2 mt-5 bg-slate-100"
+              class="flex items-center gap-3 w-[160px] h-[44px] rounded-md p-2 mt-5 bg-slate-100"
             >
               <img src="assets/coin.png" alt="" />
               <h1>0 BDT</h1>
@@ -57,12 +73,13 @@
               Donate for Flood at Noakhali, Bangladesh
             </h1>
             <p class="text-gray-500 mt-5">
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
+              The flood situation in Noakhali has worsened due to continuous
+              rain and upstream water, leading many people to seek shelters.
+              However, space is unavailable in remote areas, forcing many to
+              live in waterlogged conditions.Currently, 21,25,500 people in 87
+              unions across 8 upazilas of the district are stranded due to
+              flooding. The number of people taking shelter in 1,303 shelters is
+              2,64,743.
             </p>
             <div class="grid">
               <input
@@ -80,25 +97,26 @@
           class="grid lg:grid-cols-2 grid-cols-1 border-solid rounded-lg border-2 border-slate-00 p-5 shadow-lg mb-10"
         >
           <div>
-            <img src="assets/noakhali.png" alt="" />
+            <img src="assets/feni.png" alt="" />
           </div>
           <div>
             <div
-              class="flex items-center gap-3 w-[110px] h-[44px] rounded-md p-2 mt-5 bg-slate-100"
+              class="flex items-center gap-3 w-[160px] h-[44px] rounded-md p-2 mt-5 bg-slate-100"
             >
               <img src="assets/coin.png" alt="" />
-              <h1>0 BDT</h1>
+              <h1>600 BDT</h1>
             </div>
             <h1 class="font-bold text-lg mt-5">
-              Donate for Flood at Noakhali, Bangladesh
+              Donate for Flood Relief in Feni,Bangladesh
             </h1>
             <p class="text-gray-500 mt-5">
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
+              Water has flooded the local areas through breaches in the flood
+              control embankments of the Muhuri, Kahuya, and Silonia rivers in
+              Feni, causing widespread inundation.With the worsening flood
+              situation, over 350,000 people in the district are now marooned
+              and have been suffering immensely without electricity.Due to the
+              disruption of all communication links, flood-affected people are
+              experiencing severe hardship.
             </p>
             <div class="grid">
               <input
@@ -116,25 +134,28 @@
           class="grid lg:grid-cols-2 grid-cols-1 border-solid rounded-lg border-2 border-slate-00 p-5 shadow-lg"
         >
           <div>
-            <img src="assets/noakhali.png" alt="" />
+            <img src="assets/quota-protest.png" alt="" />
           </div>
           <div>
             <div
-              class="flex items-center gap-3 w-[110px] h-[44px] rounded-md p-2 mt-5 bg-slate-100"
+              class="flex items-center gap-3 w-[160px] h-[44px] rounded-md p-2 mt-5 bg-slate-100"
             >
               <img src="assets/coin.png" alt="" />
-              <h1>0 BDT</h1>
+              <h1>2400 BDT</h1>
             </div>
             <h1 class="font-bold text-lg mt-5">
-              Donate for Flood at Noakhali, Bangladesh
+              Aid for Injured in the Quota Movement
             </h1>
             <p class="text-gray-500 mt-5">
-              The recent floods in Noakhali have caused significant damage to
-              homes infrastructure. Your donation will help provide essential
-              supplies and to those affected by this disaster. Every
-              contribution, big or small, makes difference. Please join us in
-              supporting the relief efforts and making a positive impact on the
-              lives of those in need.
+              On 15 July 2024, students of Dhaka University were sitting with
+              placards and flags in a peaceful protest calling for reforms on
+              the quota allocation for government jobs in Bangladesh. Suddenly,
+              they were attacked by individuals armed with rods, sticks and
+              clubs with a few even brandishing revolvers. Within hours, a
+              pattern emerged across the country with similar attacks
+              coordinated by people believed to be members of the Bangladesh
+              Chatra League (BCL), a group affiliated with the ruling Awami
+              League (AL), against student protesters.
             </p>
             <div class="grid">
               <input
@@ -150,5 +171,6 @@
         </div>
       </section>
     </main>
+    <footer class="bg-slate-100 mt-20 p-10"></footer>
   </body>
 </html>
