@@ -10,3 +10,12 @@ function textValue(id){
 function blogPage(){
     window.location.href = "blog.html";
 }
+
+function homePage(){
+    window.location.href = "index.html";
+}
+
+function showHistory(id){
+    document.getElementById('card-container').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}

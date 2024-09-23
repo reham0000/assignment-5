@@ -6,8 +6,11 @@ const donateBtn = document.getElementById('donate-btn').addEventListener('click'
 
     if(donationAmount > myBalance || isNaN(donationAmount)){
         alert("You don't have enough balance to donate");  
-        return;
-        
+        return;       
+    }
+    else if(donationAmount < 0){
+        alert("Donation amount can't be negative");
+        return; 
     }
 
     const remainingBalance = myBalance - donationAmount;
@@ -21,8 +24,7 @@ const donateBtn = document.getElementById('donate-btn').addEventListener('click'
     
 
     // modal section
-    document.getElementById('modal-btn').classList.remove('hidden');
-    
+    document.getElementById('modal-btn').classList.remove('hidden');   
     document.getElementById('close-btn').addEventListener('click',function(){
         document.getElementById('modal-btn').classList.add('hidden');
        
@@ -37,8 +39,11 @@ const feniDonateBtn = document.getElementById('card-btn-feni').addEventListener(
 
     if(feniDonationAmount > myBalance || isNaN(feniDonationAmount)){
         alert("You don't have enough balance to donate");  
-        return;
-        
+        return;       
+    }
+    else if(feniDonationAmount < 0){
+        alert("Donation amount can't be negative");
+        return; 
     }
 
     const feniRemainingBalance = myBalance - feniDonationAmount;
@@ -63,8 +68,11 @@ const quotaDonateBtn = document.getElementById('card-btn-quota').addEventListene
 
     if(quotaDonationAmount > myBalance || isNaN(quotaDonationAmount)){
         alert("You don't have enough balance to donate");  
-        return;
-        
+        return;        
+    }
+    else if(quotaDonationAmount < 0){
+        alert("Donation amount can't be negative");
+        return; 
     }
 
     const quotaRemainingBalance = myBalance - quotaDonationAmount;
@@ -82,7 +90,14 @@ const quotaDonateBtn = document.getElementById('card-btn-quota').addEventListene
     });
 }); 
  
-// history button
+// FAQ section
+document.getElementById('history-btn').addEventListener('click',function(){
+    showHistory('history-container');
+});
+
+document.getElementById('donation-btn').addEventListener('click',function(){
+    showHistory('card-container');
+});
 
 
 
