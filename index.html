@@ -55,7 +55,7 @@
     </header>
 
     <main class="">
-            <!-- card section - -->
+      <!-- card section - -->
       <section class="w-11/12 mx-auto">
         <div
           class="grid lg:grid-cols-2 grid-cols-1 border-solid rounded-lg border-2 border-slate-100 p-5 shadow-lg mb-10"
@@ -86,7 +86,7 @@
               <input
                 id="donation-amount"
                 class="border-solid border-2 border-slate-200 p-3 rounded mt-5"
-                type="text"
+                type="number"
                 placeholder="Write Donation Amount"
               />
               <button
@@ -99,7 +99,7 @@
             </div>
           </div>
         </div>
-        
+
         <div
           class="grid lg:grid-cols-2 grid-cols-1 border-solid rounded-lg border-2 border-slate-00 p-5 shadow-lg mb-10"
         >
@@ -128,9 +128,8 @@
             <div class="grid">
               <input
                 id="donation-amount-feni"
-                
                 class="border-solid border-2 border-slate-200 p-3 rounded mt-5"
-                type="text"
+                type="number"
                 placeholder="Write Donation Amount"
               />
               <button
@@ -154,7 +153,7 @@
               class="flex items-center gap-3 w-[160px] h-[44px] rounded-md p-2 mt-5 bg-slate-100"
             >
               <img src="assets/coin.png" alt="" />
-              <h1>2400 BDT</h1>
+              <h1><span id="quota-amount">2400</span> BDT</h1>
             </div>
             <h1 class="font-bold text-lg mt-5">
               Aid for Injured in the Quota Movement
@@ -172,11 +171,16 @@
             </p>
             <div class="grid">
               <input
+                id="donation-amount-quota"
                 class="border-solid border-2 border-slate-200 p-3 rounded mt-5"
-                type="text"
+                type="number"
                 placeholder="Write Donation Amount"
               />
-              <button class="btn bg-lime-400 px-8 font-bold text-lg mt-5">
+              <button
+                id="card-btn-quota"
+                onclick="my_modal_1.showModal()"
+                class="btn bg-lime-400 px-8 font-bold text-lg mt-5"
+              >
                 Donate Now
               </button>
             </div>
