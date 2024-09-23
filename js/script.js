@@ -16,6 +16,7 @@ const donateBtn = document.getElementById('donate-btn').addEventListener('click'
 
     const totalAmount = donationAmount + noakhaliAmount;
     const totalAmountElement = document.getElementById('noakhali-amount').innerText = totalAmount.toFixed(2);
+    
     document.getElementById('donation-amount').value = "";
     
 
@@ -81,6 +82,9 @@ const quotaDonateBtn = document.getElementById('card-btn-quota').addEventListene
     });
 }); 
  
+// history button
+
+
 
 
 
