@@ -3,6 +3,7 @@ const donateBtn = document
   .getElementById("donate-btn")
   .addEventListener("click", function (event) {
     event.preventDefault();
+    document.getElementById("my_modal_1").showModal();
     const donationAmount = takenAmount("donation-amount");
     const noakhaliAmount = textValue("noakhali-amount");
     const myBalance = textValue("my-balance");
@@ -10,11 +11,13 @@ const donateBtn = document
     const remainingBalance = myBalance - donationAmount;
     if (donationAmount > myBalance || isNaN(donationAmount)) {
       alert("You don't have enough balance to donate");
+
       return;
     } else if (donationAmount < 0) {
       alert("Donation amount can't be negative");
       return;
     }
+
     const newBalance = (document.getElementById("my-balance").innerText =
       remainingBalance.toFixed(2));
 
@@ -26,10 +29,13 @@ const donateBtn = document
     document.getElementById("donation-amount").value = "";
 
     // modal section
+
     document.getElementById("modal-btn").classList.remove("hidden");
+
     document.getElementById("close-btn").addEventListener("click", function () {
       document.getElementById("modal-btn").classList.add("hidden");
-      document.getElementById("my_modal_1").showModal();
+
+
     });
 
     // history section
@@ -56,8 +62,7 @@ const donateBtn = document
     document.getElementById("history-container").appendChild(div);
   });
 
-
-  // card-2
+// card-2
 const feniDonateBtn = document
   .getElementById("card-btn-feni")
   .addEventListener("click", function () {
@@ -111,7 +116,6 @@ const feniDonateBtn = document
       `;
     document.getElementById("history-container").appendChild(div);
   });
-
 
 // card-3
 const quotaDonateBtn = document
@@ -176,4 +180,3 @@ document.getElementById("history-btn").addEventListener("click", function () {
 document.getElementById("donation-btn").addEventListener("click", function () {
   showHistory("card-container");
 });
-
