@@ -1,3 +1,4 @@
+// card-1
 const donateBtn = document
   .getElementById("donate-btn")
   .addEventListener("click", function (event) {
@@ -21,11 +22,8 @@ const donateBtn = document
     const totalAmountElement = (document.getElementById(
       "noakhali-amount"
     ).innerText = totalAmount.toFixed(2));
-    
 
     document.getElementById("donation-amount").value = "";
-
-  
 
     // modal section
     document.getElementById("modal-btn").classList.remove("hidden");
@@ -35,24 +33,31 @@ const donateBtn = document
     });
 
     // history section
-      document.getElementById('history-container').classList.remove('hidden');
-  
-      
-      const n = new Date();
-      const div = document.createElement('div');
-      div.classList.add('bg-white', 'w-11/12', 'mx-auto', 'border-solid', 'rounded-lg', 'border-2','border-slate-00','p-5', 'shadow', 'mb-5');
-      div.innerHTML = `
+
+    const n = new Date();
+    const div = document.createElement("div");
+    div.classList.add(
+      "bg-white",
+      "w-11/12",
+      "mx-auto",
+      "border-solid",
+      "rounded-lg",
+      "border-2",
+      "border-slate-00",
+      "p-5",
+      "shadow",
+      "mb-5"
+    );
+    div.innerHTML = `
           <h4 class="text-xl font-bold mb-3">${donationAmount} Taka is Donated for famine-2024 at Noakhali, Bangladesh</h4>
           <p >Date: ${n}</p>
           
-      `
-      document.getElementById('history-container').appendChild(div);
-      
-  
-  
+      `;
+    document.getElementById("history-container").appendChild(div);
   });
-  
 
+
+  // card-2
 const feniDonateBtn = document
   .getElementById("card-btn-feni")
   .addEventListener("click", function () {
@@ -84,22 +89,31 @@ const feniDonateBtn = document
       document.getElementById("modal-btn").classList.add("hidden");
     });
     // history section
-    
-      document.getElementById('history-container').classList.remove('hidden');
-  
-      const n = new Date();
-      const div = document.createElement('div');
-      div.classList.add('bg-white', 'w-11/12', 'mx-auto', 'border-solid', 'rounded-lg', 'border-2','border-slate-00','p-5', 'shadow', 'mb-5');
-      div.innerHTML = `
+
+    const n = new Date();
+    const div = document.createElement("div");
+    div.classList.add(
+      "bg-white",
+      "w-11/12",
+      "mx-auto",
+      "border-solid",
+      "rounded-lg",
+      "border-2",
+      "border-slate-00",
+      "p-5",
+      "shadow",
+      "mb-5"
+    );
+    div.innerHTML = `
           <h4 class="text-xl font-bold mb-3">${feniDonationAmount} Taka is Donated for  Flood Relief in Feni, Bangladesh</h4>
           <p >Date: ${n}</p>
           
-      `
-      document.getElementById('history-container').appendChild(div);
-  
+      `;
+    document.getElementById("history-container").appendChild(div);
   });
-  
 
+
+// card-3
 const quotaDonateBtn = document
   .getElementById("card-btn-quota")
   .addEventListener("click", function () {
@@ -131,21 +145,28 @@ const quotaDonateBtn = document
       document.getElementById("modal-btn").classList.add("hidden");
     });
     // history section
-    
-      document.getElementById('history-container').classList.remove('hidden');
-  
-      const n = new Date();
-      const div = document.createElement('div');
-      div.classList.add('bg-white', 'w-11/12', 'mx-auto', 'border-solid', 'rounded-lg', 'border-2','border-slate-00','p-5', 'shadow', 'mb-5');
-      div.innerHTML = `
+
+    const n = new Date();
+    const div = document.createElement("div");
+    div.classList.add(
+      "bg-white",
+      "w-11/12",
+      "mx-auto",
+      "border-solid",
+      "rounded-lg",
+      "border-2",
+      "border-slate-00",
+      "p-5",
+      "shadow",
+      "mb-5"
+    );
+    div.innerHTML = `
           <h4 class="text-xl font-bold mb-3">${quotaDonationAmount} Taka is Donated for Aid Injured in the Quota Movement, Bangladesh</h4>
           <p >Date: ${n}</p>
           
-      `
-      document.getElementById('history-container').appendChild(div);
-  
+      `;
+    document.getElementById("history-container").appendChild(div);
   });
-  
 
 // FAQ section
 document.getElementById("history-btn").addEventListener("click", function () {
@@ -155,3 +176,4 @@ document.getElementById("history-btn").addEventListener("click", function () {
 document.getElementById("donation-btn").addEventListener("click", function () {
   showHistory("card-container");
 });
+
